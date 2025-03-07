@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc mừng sinh nhật mẹ yêu</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function openLetter() {
+            let overlay = document.getElementById("letter-overlay");
+            overlay.classList.add("fade-out");
+            setTimeout(() => { overlay.style.display = "none"; }, 1000);
+            var audio = document.getElementById("bg-music");
+            audio.muted = false;
+            audio.volume = 0.1;
+            audio.play();
+        }
+    </script>
+</head>
+<body>
+    <div id="letter-overlay" class="overlay" onclick="openLetter()">
+        <div class="blur-background"></div>
+        <img src="img/image_5240647.jpg" alt="Lá thư sinh nhật" class="letter-image">
+    </div>
+
+    <audio id="bg-music" loop muted >
+        <source src="img/Happy Birthday (Piano Version).mp3" type="audio/mpeg">
+    </audio>
+    
+    <div class="container">
+        <img src="img/475764402_122348611190001433_4398156537091698614_n.jpg" alt="Hình ảnh trên" class="side-image">
+        
+        <div class="card">
+            <h1>CHÚC MỪNG SINH NHẬT MẸ YÊU!! <span class="heart">❤</span></h1>
+            <p>Mẹ à, hôm nay là ngày đặc biệt – ngày 7/3, ngày mà một người tuyệt vời như mẹ đã có mặt trên thế gian này.</p>
+            <p>Con muốn gửi đến mẹ những lời chúc tốt đẹp nhất: chúc mẹ luôn khỏe mạnh, vui vẻ và hạnh phúc mỗi ngày.</p>
+            <p>Cảm ơn mẹ vì đã luôn yêu thương, chăm sóc và là chỗ dựa vững chắc cho cả gia đình. Dù con không nói nhiều, nhưng con luôn biết ơn và trân trọng tất cả những gì mẹ đã làm.</p>
+            <p>Chúc mẹ có một ngày sinh nhật thật vui và ý nghĩa. Yêu mẹ nhiều!</p>
+            <span class="heart">❤</span>
+        </div>
+        
+        <img src="img/Screenshot 2025-03-07 102628.png" alt="Hình ảnh dưới" class="side-image">
+    </div>
+</body>
+</html>
